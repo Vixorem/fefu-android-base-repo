@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="HeadingText" parent="TextAppearance.AppCompat">
+    <style name="toolbar_text" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
@@ -18,4 +18,16 @@
         <item name="android:layout_marginTop">16dp</item>
     </style>
 
+    <style name="RegButton" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="DefaultRadioButton" parent="RegularText">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+    </style>
 </resources>

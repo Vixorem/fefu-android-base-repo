@@ -17,6 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
+            android:scaleType="centerCrop"
             android:src="@drawable/ic_group_49" />
 
         <Space
@@ -81,7 +82,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/reg_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70sp"
             android:layout_marginHorizontal="40dp"
             android:text="Зарегистрироваться"
             android:layout_gravity="center"/>
@@ -92,6 +93,7 @@
             android:layout_weight="10" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/goto_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

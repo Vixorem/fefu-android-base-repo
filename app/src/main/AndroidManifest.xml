@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Activity">
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".Registration"
             android:exported="true" />
         <activity
@@ -23,7 +26,7 @@
         </activity>
         <activity
             android:name=".HelloScreen"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>

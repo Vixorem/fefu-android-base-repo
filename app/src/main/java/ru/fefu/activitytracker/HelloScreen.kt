@@ -16,8 +16,12 @@ class HelloScreen : AppCompatActivity() {
     }
 
     private fun initHandlers() {
-        binding.regButton?.setOnClickListener {
+        binding.regButton.setOnClickListener {
             val intent = Intent(this, Registration::class.java)
+            startActivity(intent)
+        }
+        binding.gotoLogin.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
     }
