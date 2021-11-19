@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Activity Tracker</string>
+    <string name="text_policy">Нажимая на кнопку, вы соглашаетесь\n
+        с <a href="https://www.privacypolicy.com">политикой конфиденциальности</a> и обработки персональных\n
+        данных, а также принимаете <a href="https://www.termsofuse.com">пользовательское соглашение</a>
+    </string>
 </resources>
