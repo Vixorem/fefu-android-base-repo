@@ -4,4 +4,6 @@
         с <a href="https://www.privacypolicy.com">политикой конфиденциальности</a> и обработки персональных\n
         данных, а также принимаете <a href="https://www.termsofuse.com">пользовательское соглашение</a>
     </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

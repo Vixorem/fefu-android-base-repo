@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainScreen.ActivityDetalizationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/detalization_toolbar"
+            layout="@layout/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/detalization_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="14.32 км"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/detalization_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:text="10:10"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/detalization_distance" />
+
+            <TextView
+                android:id="@+id/detalization_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="14 минут"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/detalization_time" />
+
+            <TextView
+                android:id="@+id/detalization_start_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:text="Старт"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/detalization_duration" />
+
+            <TextView
+                android:id="@+id/detalization_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="10:00"
+                app:layout_constraintLeft_toRightOf="@id/detalization_start_title"
+                app:layout_constraintTop_toBottomOf="@id/detalization_duration" />
+
+
+            <TextView
+                android:id="@+id/detalization_finish_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:text="Финиш"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/detalization_start"
+                app:layout_constraintTop_toBottomOf="@id/detalization_duration" />
+
+            <TextView
+                android:id="@+id/detalization_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="12:00"
+                app:layout_constraintLeft_toRightOf="@id/detalization_finish_title"
+                app:layout_constraintTop_toBottomOf="@id/detalization_duration" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/DefaultTextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Комментарий"
+                android:padding="10dp"
+                app:layout_constraintTop_toBottomOf="@id/detalization_finish">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

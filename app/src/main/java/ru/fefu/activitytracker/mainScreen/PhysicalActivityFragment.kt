@@ -5,14 +5,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import kotlinx.android.synthetic.main.fragment_physical_activity.view.*
 import ru.fefu.activitytracker.R
 
 // Фрагмент для вкладки "Активности"
 class PhysicalActivityFragment : Fragment(R.layout.fragment_physical_activity) {
-    private lateinit var physicalActivityAdapter: PhysicalActivityAdapter
+    private lateinit var physicalActivityAdapter: PhysicalActivityScreenAdapter
     private lateinit var viewPager: ViewPager2
 
     override fun onCreateView(
@@ -24,7 +26,7 @@ class PhysicalActivityFragment : Fragment(R.layout.fragment_physical_activity) {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        physicalActivityAdapter = PhysicalActivityAdapter(this)
+        physicalActivityAdapter = PhysicalActivityScreenAdapter(this)
         viewPager = view.findViewById(R.id.pager)
         viewPager.adapter = physicalActivityAdapter
 
